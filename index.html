@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -324,6 +323,19 @@
             margin-top: 40px;
         }
 
+
+        /* ACTIVIDADES DE TUTORIA */
+        .actividad-card{background:#fff;border:1px solid #e2eaf4;border-radius:15px;padding:25px;margin:22px 0;box-shadow:0 5px 20px #00000008}
+        .actividad-card h3{color:var(--azul);font-size:22px;margin:8px 0 12px}
+        .actividad-card h4{color:#315b8d;margin:17px 0 7px}
+        .actividad-card p{margin:8px 0}.actividad-card ul,.actividad-card ol{padding-left:24px;margin:8px 0}
+        .actividad-card li{margin:6px 0}.actividad-tag{display:inline-block;background:var(--azul-claro);color:var(--azul);padding:5px 11px;border-radius:20px;font-size:12px;font-weight:bold}
+        .reflexion{background:#f1f6fc;border-left:4px solid #7197c7;border-radius:8px;padding:15px;margin-top:16px}
+        .evidencia{background:#f8fafc;border:1px dashed #9db4d0;padding:13px;border-radius:9px;margin-top:14px}
+        .tabla-actividad{width:100%;border-collapse:collapse;margin:12px 0}.tabla-actividad th,.tabla-actividad td{border:1px solid #dce5ef;padding:10px;text-align:left}
+        .tabla-actividad th{background:var(--azul);color:white}.tabla-actividad tr:nth-child(even){background:#f5f8fc}
+        @media(max-width:600px){.actividad-card{padding:18px}.tabla-actividad{font-size:13px}.tabla-actividad th,.tabla-actividad td{padding:7px}}
+
         /* RESPONSIVE */
 
         @media (max-width: 800px) {
@@ -377,6 +389,42 @@
                 font-size: 27px;
             }
         }
+        
+    .evidencias {
+    background: #f1f6fc;
+    border: 1px solid #d5e1f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.evidencias h4 {
+    color: #23416a;
+    margin-bottom: 12px;
+}
+
+.evidencia-img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #dce7f5;
+}
+
+.boton-evidencia {
+    display: inline-block;
+    background: #23416a;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.boton-evidencia:hover {
+    background: #365b8b;
+}
     </style>
 </head>
 
@@ -405,6 +453,8 @@
 
                 <li><a href="#proyectos" data-pagina="proyectos">
                     Proyectos</a></li>
+
+                <li><a href="#actividades" data-pagina="actividades">Actividades</a></li>
 
                 <li><a href="#contacto" data-pagina="contacto">
                     Contacto</a></li>
@@ -687,6 +737,141 @@
                 </article>
 
             </div>
+        </section>
+
+        <!-- ACTIVIDADES DE TUTORIA -->
+        <section id="actividades" class="pagina">
+          <div class="panel">
+            <h2 class="titulo-seccion">Mis actividades de desarrollo personal y profesional</h2>
+            <p class="descripcion-seccion">Evidencias de mi proceso de aprendizaje como estudiante de quinto semestre de Ingeniería Informática.</p>
+            <p>En este apartado presento actividades para reconocer mis emociones, cuidar mi bienestar, mejorar mi forma de aprender, proponer soluciones para mi comunidad y construir mi futuro profesional. Los ejemplos y resultados deben ajustarse a mis experiencias reales.</p>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">DESARROLLO PERSONAL Y SOCIAL</span><h3>🧠 1. Manejo emocional</h3>
+              <p><b>Objetivo:</b> reconocer mis emociones en situaciones académicas y aplicar estrategias para responder de manera consciente.</p>
+              <h4>Situación 1. Problemas al realizar un proyecto de programación</h4>
+              <ul><li><b>Contexto:</b> mientras desarrollaba un proyecto, el código mostraba errores y no encontraba rápidamente la solución.</li><li><b>Detonante:</b> los errores constantes y la presión por terminar.</li><li><b>Emoción:</b> frustración y desesperación.</li><li><b>Respuesta:</b> perdí la concentración y pensé en dejar la actividad por un momento.</li><li><b>Estrategia:</b> hacer una pausa, respirar profundamente y revisar el código por partes.</li></ul>
+              <h4>Situación 2. Varias actividades escolares pendientes</h4>
+              <ul><li><b>Contexto:</b> tuve que avanzar en tareas de diferentes materias durante un periodo corto.</li><li><b>Detonante:</b> la cantidad de pendientes y el tiempo disponible.</li><li><b>Emoción:</b> estrés y preocupación.</li><li><b>Respuesta:</b> me sentí presionado y no sabía por dónde comenzar.</li><li><b>Estrategia:</b> ordenar las tareas por prioridad y asignarles un horario.</li></ul>
+              <h4>Situación 3. Exposición frente al grupo</h4>
+              <ul><li><b>Contexto:</b> al explicar un tema frente a mis compañeros sentí inseguridad.</li><li><b>Detonante:</b> miedo a equivocarme u olvidar información.</li><li><b>Emoción:</b> nerviosismo.</li><li><b>Respuesta:</b> hablé rápidamente y me costó expresar algunas ideas.</li><li><b>Estrategia:</b> preparar el tema, practicar en voz alta y respirar antes de comenzar.</li></ul>
+              <h4>Estrategia aplicada: controlar la frustración</h4><ol><li>Detenerme un momento y respirar lentamente.</li><li>Identificar qué parte del problema causa el error.</li><li>Dividir el trabajo en pasos pequeños.</li><li>Probar una solución a la vez y pedir orientación si es necesario.</li></ol>
+              <p><b>Antes:</b> me desesperaba cuando el programa no funcionaba y quería resolver todo de inmediato.</p><p><b>Después:</b> pude organizar mejor la revisión, mantener la calma y entender que equivocarme también forma parte del aprendizaje.</p>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Al realizar esta actividad comprendí que las emociones influyen en la forma en que estudio y resuelvo problemas. Antes podía reaccionar con frustración cuando un programa no funcionaba o cuando tenía muchas tareas pendientes. Ahora identifico que hacer una pausa, respirar y ordenar mis ideas me permite actuar mejor. En una situación similar trataré de no responder impulsivamente; primero reconoceré lo que estoy sintiendo y después buscaré una solución paso a paso. También procuraré pedir apoyo cuando lo necesite. Considero que manejar mis emociones puede ayudarme a mejorar mi desempeño académico y mi convivencia con otras personas.</p></div>
+            <div class="evidencias">
+                <h4>📸 Mi evidencia</h4>
+                 <p>
+                    Infografía de manejo emocional realizada
+                    como parte de mi actividad.
+                </p>
+                <img src="images/manejo-emocional.png"
+                alt="Infografía de manejo emocional"
+                class="evidencia-img"
+                >
+            </article>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">DESARROLLO PERSONAL Y SOCIAL</span><h3>🌿 2. Salud y felicidad</h3>
+              <p><b>Objetivo:</b> diseñar un plan realista de dos semanas para fortalecer hábitos de bienestar físico, mental y digital.</p>
+              <h4>Mi plan de hábitos durante dos semanas</h4>
+              <table class="tabla-actividad"><thead><tr><th>Hábito</th><th>Acción concreta</th><th>Seguimiento</th></tr></thead><tbody>
+              <tr><td>Descanso</td><td>Establecer una hora aproximada para dormir y evitar desvelarme.</td><td>Registrar si respeté mi horario.</td></tr>
+              <tr><td>Descanso digital</td><td>Dejar el celular durante los periodos de estudio y antes de dormir.</td><td>Marcar los días que lo cumplí.</td></tr>
+              <tr><td>Actividad física</td><td>Caminar o moverme de 20 a 30 minutos, según mi tiempo y posibilidades.</td><td>Anotar los días de actividad.</td></tr>
+              <tr><td>Organización</td><td>Planear mis tareas y reservar un momento para descansar.</td><td>Revisar mis avances al final del día.</td></tr></tbody></table>
+              <h4>Seguimiento y evaluación</h4><p>Durante la primera semana observaré cuáles hábitos puedo cumplir y qué situaciones me dificultan mantenerlos. En la segunda semana ajustaré mis horarios para que el plan sea más sencillo. Al terminar compararé los días de cumplimiento y escribiré qué cambio me resultó más útil. Compartiré únicamente datos generales, sin información íntima o médica.</p>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Esta actividad me ayuda a reconocer que la salud y la felicidad también dependen de pequeñas decisiones que puedo mantener. Como estudiante, a veces concentro mi atención en terminar tareas y dejo el descanso para después. Quiero organizar mejor mis tiempos para evitar desvelarme, reducir distracciones del celular y realizar actividad física de acuerdo con mis posibilidades. También considero importante dedicar momentos a convivir con mi familia y amistades. Revisaré mis avances sin exigirme resultados perfectos. Mi propósito es construir una rutina equilibrada que me permita estudiar, descansar y disfrutar mis actividades cotidianas.</p></div>
+               <div class="evidencias">
+                <h4>🌿 Mi calendario de hábitos</h4>
+                <img src="images/tablero_habitos_14_dias.png"
+                alt= "Calendario de hábitos de 14 días"
+                class="evidencia-img"
+                >
+            </article>
+           
+</div>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">APRENDIZAJE Y PROYECTOS</span><h3>📚 3. Aprendizaje autorregulado</h3>
+              <p><b>Objetivo:</b> aplicar durante una semana un ciclo de planificación, monitoreo y ajuste para mejorar el aprendizaje de un tema técnico.</p>
+              <h4>Dificultad identificada</h4><p>Una dificultad que puedo encontrar en mi formación es comprender cómo conectar una aplicación web con una API y una base de datos. A veces intento avanzar directamente al código sin comprobar si entendí cada parte.</p>
+              <h4>Mi ciclo de aprendizaje</h4><ol><li><b>Planificación:</b> definir como meta estudiar las peticiones de una API con FastAPI y su consumo desde una página web.</li><li><b>Monitoreo:</b> estudiar en bloques de 25 a 30 minutos, escribir dudas y explicar con mis palabras lo que hace cada parte del código.</li><li><b>Evaluación:</b> realizar un ejercicio pequeño sin copiar todo el ejemplo y revisar los errores.</li><li><b>Ajuste:</b> repasar los conceptos que no comprendí, consultar documentación y modificar mi práctica.</li></ol>
+              <table class="tabla-actividad"><thead><tr><th>Día</th><th>Actividad</th><th>Evidencia</th></tr></thead><tbody><tr><td>1</td><td>Definir tema y meta.</td><td>Meta escrita.</td></tr><tr><td>2</td><td>Repasar conceptos y ejemplos.</td><td>Apuntes.</td></tr><tr><td>3</td><td>Reproducir un ejemplo guiado.</td><td>Captura del código.</td></tr><tr><td>4</td><td>Realizar un ejercicio propio.</td><td>Archivo o captura.</td></tr><tr><td>5</td><td>Identificar errores y dudas.</td><td>Lista de dificultades.</td></tr><tr><td>6</td><td>Corregir y practicar.</td><td>Versión corregida.</td></tr><tr><td>7</td><td>Evaluar y ajustar el plan.</td><td>Conclusión semanal.</td></tr></tbody></table>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Con esta actividad reconozco que aprender no consiste solamente en leer información o copiar código, sino en establecer una meta, revisar mis avances y cambiar la estrategia cuando algo no funciona. Me ayuda dividir un tema complicado en partes pequeñas y practicar después de estudiar la teoría. También debo registrar mis dudas para buscar respuestas concretas y no repetir los mismos errores. La estrategia que quiero mantener es estudiar por bloques de tiempo y comprobar lo aprendido mediante ejercicios propios. Así puedo identificar qué conocimientos domino y cuáles necesito reforzar. En mi formación de Ingeniería Informática, ser constante y responsable con mi aprendizaje será importante para resolver problemas nuevos.</p></div>
+                <div class="evidencias">
+                <h4>Diario digital de aprendizaje y gráfica de progreso.</h4>
+                <img src="images/Diariodigital-aprendizaje.png"
+                alt= "Diario digital de aprendizaje y gráfica de progreso"
+                class="evidencia-img"
+                >
+            </article>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">APRENDIZAJE Y PROYECTOS</span><h3>💡 4. Emprendimiento social y económico</h3>
+              <p><b>Objetivo:</b> identificar una necesidad de la comunidad y proponer una solución digital con valor social y viabilidad económica inicial.</p>
+              <h4>Idea: catálogo digital para pequeños negocios</h4><p><b>Problema:</b> algunos pequeños negocios muestran sus productos únicamente de manera presencial o mediante mensajes dispersos, por lo que sus clientes pueden tener dificultades para consultar el catálogo, precios y disponibilidad.</p>
+              <p><b>Beneficiarios:</b> propietarios de pequeños comercios y personas que desean consultar productos antes de acudir al establecimiento.</p><p><b>Propuesta de valor:</b> crear un sitio web adaptable a celulares donde cada negocio pueda mostrar productos, descripciones, precios, fotografías y medios de contacto.</p>
+              <h4>Modelo inicial</h4><ul><li><b>Recursos:</b> computadora, internet, desarrollo web, base de datos y fotografías autorizadas.</li><li><b>Actividades:</b> conocer las necesidades de los usuarios, diseñar el catálogo, registrar productos y probar su funcionamiento.</li><li><b>Costos:</b> dominio y alojamiento si se publica en internet, mantenimiento, conexión y tiempo de desarrollo. Deben cotizarse antes de iniciar.</li><li><b>Sostenibilidad económica:</b> ofrecer una cuota accesible por configuración o mantenimiento, según las necesidades del negocio.</li><li><b>Impacto social:</b> facilitar que los pequeños negocios tengan presencia digital y que sus clientes encuentren información clara.</li></ul>
+              <h4>Indicadores de impacto</h4><ul><li>Número de negocios que prueban el catálogo.</li><li>Número de productos publicados con autorización.</li><li>Opiniones de los usuarios sobre la facilidad de uso.</li><li>Consultas recibidas por los negocios mediante el catálogo.</li></ul>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Esta propuesta me permite relacionar los conocimientos de Ingeniería Informática con una necesidad que puede presentarse en mi comunidad. Considero que la tecnología no solamente sirve para crear aplicaciones complejas, también puede ayudar a resolver problemas cotidianos. Un catálogo digital puede facilitar que los pequeños negocios presenten sus productos y que los clientes consulten información de manera sencilla. Para que la idea funcione, primero tendría que hablar con los posibles usuarios, conocer sus necesidades y comprobar si utilizarían la herramienta. También debo calcular los costos reales y mantener un precio accesible. Mi intención sería equilibrar la sostenibilidad económica del proyecto con un beneficio útil para la comunidad.</p></div>
+                <div class="evidencia">
+                <h4>Lienzo de modelo de negocio de impacto.</h4>
+                <img src="images/lienzo-modelo.png"
+                alt= "Lienzo de modelo de negocio de impacto"
+                class="evidencia-img"
+                >
+            </article>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">IDENTIDAD PROFESIONAL Y VOCACIÓN</span><h3>🧭 5. Plan de carrera</h3>
+              <p><b>Objetivo:</b> investigar dos perfiles relacionados con Ingeniería Informática, reconocer mis habilidades y establecer una ruta de formación de seis meses.</p>
+              <h4>Perfiles profesionales de interés</h4><table class="tabla-actividad"><thead><tr><th>Perfil</th><th>Actividades</th><th>Competencias por fortalecer</th></tr></thead><tbody><tr><td>Desarrollador web</td><td>Crear y mantener sitios y aplicaciones, conectar interfaces con APIs y bases de datos.</td><td>JavaScript, TypeScript, diseño adaptable, pruebas y Git.</td></tr><tr><td>Desarrollador backend</td><td>Construir servicios, administrar lógica del servidor y diseñar APIs.</td><td>Python, FastAPI, SQL, seguridad y documentación.</td></tr></tbody></table>
+              <p><b>Mi punto de partida:</b> durante mi formación he realizado prácticas con Python, Java, HTML, CSS, JavaScript, TypeScript, Astro, Tailwind CSS, FastAPI y MySQL. Necesito seguir practicando y demostrar estas habilidades mediante proyectos documentados.</p>
+              <h4>Ruta de formación de seis meses</h4><ol><li><b>Mes 1:</b> reforzar HTML, CSS, JavaScript y TypeScript.</li><li><b>Mes 2:</b> desarrollar una interfaz web adaptable.</li><li><b>Mes 3:</b> practicar Python y crear una API con FastAPI.</li><li><b>Mes 4:</b> fortalecer SQL y conectar una API con MySQL.</li><li><b>Mes 5:</b> integrar un proyecto, realizar pruebas y documentarlo.</li><li><b>Mes 6:</b> actualizar mi portafolio y CV, revisar vacantes de prácticas y detectar áreas de mejora.</li></ol>
+              <p><b>Indicadores:</b> completar un proyecto integrador, documentar su funcionamiento, actualizar mi portafolio y registrar semanalmente mis horas de práctica.</p>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Al comparar estos perfiles observo que ambos se relacionan con los conocimientos que estoy desarrollando en la carrera. Me interesa especialmente el desarrollo web y backend porque puedo combinar la creación de interfaces con la programación de servicios y bases de datos. Sin embargo, todavía necesito fortalecer mis conocimientos mediante práctica constante y proyectos que demuestren lo que sé hacer. Durante los próximos seis meses quiero avanzar con metas pequeñas y medibles, documentar mis trabajos y mejorar mi portafolio. La competencia que considero importante priorizar es la integración de aplicaciones web con APIs y bases de datos, porque me permitirá construir soluciones más completas y prepararme para buscar prácticas profesionales.</p></div>
+              <div class="evidencias">
+                <h3>🧭 Mi plan de carrera profesional</h3>
+                <div class="botones-evidencia">
+                <a href="evidencias/plan_carrera.pdf"
+                target="_blank" class="boton-evidencia">
+                📄 Consultar mi plan de carrera
+            </a>
+            <a href="evidencias/plan_carrera.pdf"
+            download
+            class="boton-evidencia">
+            ⬇ Descargar PDF
+        </a>
+
+    </div>
+
+            </article>
+
+            <article class="actividad-card">
+              <span class="actividad-tag">IDENTIDAD PROFESIONAL Y VOCACIÓN</span><h3>⚖️ 6. Ética profesional</h3>
+              <p><b>Objetivo:</b> analizar un dilema tecnológico y justificar una decisión tomando en cuenta a las personas afectadas y la responsabilidad de quien desarrolla software.</p>
+              <h4>Caso: privacidad de datos en una aplicación escolar</h4><p><b>Situación:</b> imagino que formo parte del equipo que desarrolla una aplicación para consultar información académica. Durante las pruebas, alguien propone utilizar datos reales de estudiantes en una demostración pública, aunque no se cuenta con autorización para mostrarlos.</p>
+              <p><b>Dilema:</b> ¿utilizar datos reales para facilitar la demostración o proteger la privacidad, aunque sea necesario preparar información de prueba?</p>
+              <h4>Personas involucradas</h4><ul><li>Estudiantes cuyos datos podrían quedar expuestos.</li><li>Docentes y personal responsable de la información.</li><li>Equipo de desarrollo.</li><li>Institución que administra los datos.</li></ul>
+              <h4>Alternativas y consecuencias</h4><ol><li><b>Usar datos reales sin autorización:</b> puede facilitar la demostración, pero expone información personal y afecta la confianza.</li><li><b>Usar datos ficticios o anonimizados:</b> requiere preparar información de prueba, pero reduce riesgos y permite demostrar el sistema responsablemente.</li></ol>
+              <h4>Mi decisión</h4><p>Elegiría la segunda alternativa. Como futuro profesionista, debo proteger la privacidad, solicitar autorización cuando corresponda, limitar el acceso a la información y evitar publicar datos que permitan identificar a una persona.</p>
+              <div class="reflexion"><h4>Reflexión de cierre</h4><p>Este caso me hace comprender que desarrollar software implica responsabilidades que van más allá de conseguir que un programa funcione. Las decisiones técnicas pueden afectar la privacidad, la seguridad y la confianza de las personas. Como futuro ingeniero informático, considero que debo analizar quién puede resultar afectado antes de utilizar o compartir información. En una situación similar no usaría datos personales sin autorización; buscaría una alternativa con información ficticia o anonimizada y consultaría las reglas aplicables al proyecto. También comunicaría los riesgos al equipo y propondría medidas para proteger la información. La ética profesional debe estar presente desde el diseño hasta el uso de cualquier sistema tecnológico.</p></div>
+              <div class="evidencias">
+                <h3>🧭 Mi plan de carrera profesional</h3>
+                <div class="botones-evidencia">
+                <a href="evidencias/caso_multimedia.pdf"
+                target="_blank" class="boton-evidencia">
+                📄 Consultar mi plan de carrera
+            </a>
+            <a href="evidencias/caso_multimedia.pdf"
+            download
+            class="boton-evidencia">
+            ⬇ Descargar PDF
+        </a>
+
+    </div>
+            </article>
+           
         </section>
 
         <!-- CONTACTO -->
